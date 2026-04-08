@@ -247,6 +247,7 @@ ORDER BY active_clubs DESC, s.student_l_nm;
 Query Results:
 
 ### Feature Matrix
-<img width="779" height="354" alt="Screenshot 2026-04-08 at 6 06 26 PM" src="https://github.com/user-attachments/assets/972fbe92-043c-4fbb-8e4a-64c5d536e1b0" />
+<img width="783" height="336" alt="Screenshot 2026-04-08 at 6 22 27 PM" src="https://github.com/user-attachments/assets/74fd99fe-9a16-4240-8cb3-712b5a02d770" />
+
 
 ## Database Information
