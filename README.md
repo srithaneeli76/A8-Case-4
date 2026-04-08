@@ -164,6 +164,8 @@ ORDER BY attendees_count DESC, e.event_date;
 ```
 Query Results:
 
+<img width="310" height="131" alt="Screenshot 2026-04-08 at 5 25 12 PM" src="https://github.com/user-attachments/assets/b1e1b312-5560-4b09-8611-63704d6e498b" />
+
 ### Complex Query #8: Which club fairs had the highest number of club reservations?
 
 Managerial Justification: 
@@ -184,6 +186,8 @@ ORDER BY clubs_reserved DESC, f.fair_date;
 ```
 Query Results:
 
+<img width="254" height="45" alt="Screenshot 2026-04-08 at 5 24 25 PM" src="https://github.com/user-attachments/assets/405b4c55-d70a-4e0e-9109-67e48907940c" />
+
 ### Complex Query #9: Which clubs have not made any reservation for a fair?
 
 Managerial Justification: 
@@ -199,6 +203,8 @@ WHERE r.club_club_id IS NULL
 ORDER BY c.club_name;
 ```
 Query Results:
+
+<img width="271" height="102" alt="Screenshot 2026-04-08 at 5 23 47 PM" src="https://github.com/user-attachments/assets/33eb2bcf-5fec-4f68-a6c2-b55d2386f69a" />
 
 ### Complex Query #10: Which students are active members in more than one club?
 
