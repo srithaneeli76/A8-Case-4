@@ -79,7 +79,7 @@ Query Results:
 
 <img width="563" height="258" alt="Screenshot 2026-04-08 at 4 41 02 PM" src="https://github.com/user-attachments/assets/c8fa9046-5d05-4975-a972-2e17d4cc8341" />
 
-### Simple Query #3: Which students have joined a club, and when did they join?
+### Simple Query #3: Which students have joined a club and when did they join?
 
 Managerial Justification: This helps managers and club leaders track membership growth over time and identify recently joined students for onboarding or outreach.
 
@@ -242,5 +242,8 @@ HAVING COUNT(DISTINCT c.club_id) > 1
 ORDER BY active_clubs DESC, s.student_l_nm;
 ```
 Query Results:
+
+### Feature Matrix
+<img width="779" height="354" alt="Screenshot 2026-04-08 at 6 06 26 PM" src="https://github.com/user-attachments/assets/972fbe92-043c-4fbb-8e4a-64c5d536e1b0" />
 
 ## Database Information
