@@ -15,7 +15,7 @@ Member Names:
 
 The objective of this case is to develop a relational database for the Campus Club Pair ( CCCP) at Peachtree State University (Georgia) to manage student organizations and campus engagements. The data model includes memberships, events, attendance, and club funding. The sole purpose of the database is to manage the student organizations in a centralized way, and the goal is to model the complex relationships accurately to help the Student Life Director understand campus engagement and its finances.
 
-Extension: (NEED TO ADD)
+Extension: At club events, certain clubs are able to bring guest speakers to come in and speak to their members. These guest speakers are employees of specific companies. For example, Google (the company) can have one of their Software Engineers (guest speakers) come in for a club event and talk about the company, their position, or whatever topic they choose to.
 
 ## Data Model: 
 
