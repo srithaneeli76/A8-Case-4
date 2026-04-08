@@ -39,10 +39,11 @@ Explanation: (NEED TO ADD)
 <img width="786" height="506" alt="Screenshot 2026-04-08 at 3 38 44 PM" src="https://github.com/user-attachments/assets/021f5b14-d43e-44e9-b1a3-1c9909e84db8" />
 <img width="786" height="548" alt="Screenshot 2026-04-08 at 3 38 57 PM" src="https://github.com/user-attachments/assets/4de78686-9ba7-4754-9c1b-1d30033e84fd" />
 
-## Ten Queries:
+## Queries:
 ### Simple Query #1: Which students are currently active members of a club?
 
 Managerial Justification: 
+This helps club officers and event planners quickly identify currently active student members for communication, recruitment, and participation tracking.
 
 Code:
 ```SQL
@@ -61,6 +62,7 @@ Query Results:
 ### Simple Query #2: What upcoming events are scheduled and in what order will they occur?
 
 Managerial Justification: 
+This helps staff and student leaders stay organized, promote future events, and prepare logistics in chronological order.
 
 Code:
 ```SQL
@@ -79,7 +81,7 @@ Query Results:
 
 ### Simple Query #3: Which students have joined a club, and when did they join?
 
-Managerial Justification: 
+Managerial Justification: This helps managers and club leaders track membership growth over time and identify recently joined students for onboarding or outreach.
 
 Code:
 ```SQL
@@ -98,7 +100,7 @@ Query Results:
 
 ### Simple Query #4: Which fair reservations require power access and for which fair were they made?
 
-Managerial Justification: 
+Managerial Justification: This helps event organizers prepare table layouts and electrical setup ahead of time for each club fair.
 
 Code:
 
@@ -106,7 +108,7 @@ Query Results:
 
 ### Complex Query #5: Which students have never attended any recorded event?
 
-Managerial Justification: 
+Managerial Justification: This helps administrators identify students who may be less engaged and may benefit from targeted outreach or involvement opportunities.
 
 Code:
 ```SQL
@@ -127,7 +129,7 @@ Query Results:
 
 ### Complex Query #6: Which clubs currently have the highest number of active members?
 
-Managerial Justification: 
+Managerial Justification: This helps campus leadership identify highly engaged clubs and allocate space, resources, or promotional support more effectively.
 
 Code:
 ```SQL
@@ -148,7 +150,7 @@ Query Results:
 
 ### Complex Query #7: Which events had the highest student attendance?
 
-Managerial Justification: 
+Managerial Justification: This helps event planners evaluate which events were most successful and use that information when planning future programming.
 
 Code:
 ```SQL
@@ -168,7 +170,7 @@ Query Results:
 
 ### Complex Query #8: Which club fairs had the highest number of club reservations?
 
-Managerial Justification: 
+Managerial Justification: This helps organizers understand which fairs generated the most interest and can guide planning for venue size, staffing, and table availability.
 
 Code:
 ```SQL
@@ -190,7 +192,7 @@ Query Results:
 
 ### Complex Query #9: Which clubs have not made any reservation for a fair?
 
-Managerial Justification: 
+Managerial Justification: This helps managers identify clubs that are not participating in fairs and may need reminders, outreach, or additional support.
 
 Code:
 ```SQL
@@ -208,7 +210,7 @@ Query Results:
 
 ### Complex Query #10: Which students are active members in more than one club?
 
-Managerial Justification: 
+Managerial Justification: This helps identify highly involved students who may be strong candidates for leadership, ambassador roles, or cross-club collaboration opportunities.
 
 Code:
 ```SQL
@@ -227,7 +229,5 @@ HAVING COUNT(DISTINCT c.club_id) > 1
 ORDER BY active_clubs DESC, s.student_l_nm;
 ```
 Query Results:
+
 ## Database Information
-
-
-
