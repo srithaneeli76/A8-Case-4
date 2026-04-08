@@ -19,7 +19,7 @@ Extension: At club events, certain clubs are able to bring guest speakers to com
 
 ## Data Model: 
 
-<img width="1509" height="1184" alt="mb_A8 Data Model PNG" src="https://github.com/user-attachments/assets/fa2cc87e-0c17-44f9-a2a1-ea9250cc0335" />
+<img width="1509" height="1184" alt="mb_A8 Data Model PNG 2" src="https://github.com/user-attachments/assets/24a66351-37ee-46b5-83bb-ed5c0cb535c4" />
 
 
 
