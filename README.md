@@ -38,6 +38,24 @@ Explanation: (NEED TO ADD)
 <img width="786" height="548" alt="Screenshot 2026-04-08 at 3 38 57 PM" src="https://github.com/user-attachments/assets/4de78686-9ba7-4754-9c1b-1d30033e84fd" />
 
 ## Ten Queries:
+### Simple Query #1: Which students are currently active members of a club?
+
+Managerial Justification: 
+
+Code:
+```SQL
+SELECT s.student_f_nm,
+       s.student_l_nm
+FROM student s
+JOIN membership m
+  ON s.student_id = m.student_id
+WHERE LOWER(m.member_status) = 'active'
+ORDER BY s.student_l_nm, s.student_f_nm;
+```
+Query Results:
+
+<img width="201" height="123" alt="Screenshot 2026-04-08 at 4 31 48 PM" src="https://github.com/user-attachments/assets/a2b189d1-bcf9-4923-aaca-1517f34e30ac" />
+
 
 ## Database Information
 
