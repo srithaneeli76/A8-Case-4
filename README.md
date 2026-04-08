@@ -103,8 +103,21 @@ Query Results:
 Managerial Justification: This helps event organizers prepare table layouts and electrical setup ahead of time for each club fair.
 
 Code:
+```SQL
+SELECT r.table_id,
+       r.power_access_request,
+       f.fair_date,
+       f.fair_venue
+FROM reservation r
+JOIN fair f
+  ON r.fair_fair_id = f.fair_id
+ORDER BY f.fair_date, r.table_id;
+```
 
 Query Results:
+
+<img width="391" height="156" alt="Screenshot 2026-04-08 at 5 43 14 PM" src="https://github.com/user-attachments/assets/e30cc617-ef7e-4408-aba0-5e34663a3de4" />
+
 
 ### Complex Query #5: Which students have never attended any recorded event?
 
