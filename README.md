@@ -146,5 +146,82 @@ Query Results:
 
 <img width="350" height="121" alt="Screenshot 2026-04-08 at 4 49 12 PM" src="https://github.com/user-attachments/assets/07714f88-8709-47dd-a31a-61a15f9f6899" />
 
+### Complex Query #7: Which events had the highest student attendance?
+
+Managerial Justification: 
+
+Code:
+```SQL
+SELECT e.event_title,
+       e.event_date,
+       COUNT(*) AS attendees_count
+FROM attendance_records ar
+JOIN events e
+  ON e.event_id = ar.event_id
+WHERE LOWER(ar.attendance_checked) = 'yes'
+GROUP BY e.event_id, e.event_title, e.event_date
+ORDER BY attendees_count DESC, e.event_date;
+```
+Query Results:
+
+### Complex Query #8: Which club fairs had the highest number of club reservations?
+
+Managerial Justification: 
+
+Code:
+```SQL
+SELECT f.fair_date,
+       f.fair_venue,
+       COUNT(DISTINCT c.club_id) AS clubs_reserved
+FROM fair f
+JOIN reservation r
+  ON f.fair_id = r.fair_fair_id
+JOIN club c
+  ON c.club_id = r.club_club_id
+GROUP BY f.fair_id, f.fair_date, f.fair_venue
+HAVING COUNT(DISTINCT c.club_id) > 1
+ORDER BY clubs_reserved DESC, f.fair_date;
+```
+Query Results:
+
+### Complex Query #9: Which clubs have not made any reservation for a fair?
+
+Managerial Justification: 
+
+Code:
+```SQL
+SELECT c.club_id,
+       c.club_name
+FROM club c
+LEFT JOIN reservation r
+  ON c.club_id = r.club_club_id
+WHERE r.club_club_id IS NULL
+ORDER BY c.club_name;
+```
+Query Results:
+
+### Complex Query #10: Which students are active members in more than one club?
+
+Managerial Justification: 
+
+Code:
+```SQL
+SELECT s.student_id,
+       s.student_f_nm,
+       s.student_l_nm,
+       COUNT(DISTINCT c.club_id) AS active_clubs
+FROM student s
+JOIN membership m
+  ON s.student_id = m.student_id
+JOIN club c
+  ON c.club_id = m.club_id
+WHERE LOWER(m.member_status) = 'active'
+GROUP BY s.student_id, s.student_f_nm, s.student_l_nm
+HAVING COUNT(DISTINCT c.club_id) > 1
+ORDER BY active_clubs DESC, s.student_l_nm;
+```
+Query Results:
 ## Database Information
+
+
 
