@@ -1,4 +1,4 @@
-# MIST4610 – GROUP PROJECT#1 – Case 4: Campus Club Fair
+# MIST4610 – GROUP PROJECT#1 – Case 4: Campus Club Fair📚
 
 ## Group Information: 
 
