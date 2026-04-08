@@ -224,7 +224,6 @@ ORDER BY total_events DESC, gs.emp_l_nm, gs.emp_f_nm;
 ```
 Query Results:
 
-
 ### Complex Query #10: Which students are active members in more than one club?
 
 Managerial Justification: This helps identify highly involved students who may be strong candidates for leadership, ambassador roles, or cross-club collaboration opportunities.
