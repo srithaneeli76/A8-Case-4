@@ -203,23 +203,27 @@ Query Results:
 
 <img width="254" height="45" alt="Screenshot 2026-04-08 at 5 24 25 PM" src="https://github.com/user-attachments/assets/405b4c55-d70a-4e0e-9109-67e48907940c" />
 
-### Complex Query #9: Which clubs have not made any reservation for a fair?
+### Complex Query #9: Which guest speakers have participated in more than one event?
 
-Managerial Justification: This helps managers identify clubs that are not participating in fairs and may need reminders, outreach, or additional support.
+Managerial Justification: This helps organizers identify frequently used speakers, strengthen relationships with reliable guests, and plan future speaker-based events more effectively.
 
 Code:
 ```SQL
-SELECT c.club_id,
-       c.club_name
-FROM club c
-LEFT JOIN reservation r
-  ON c.club_id = r.club_club_id
-WHERE r.club_club_id IS NULL
-ORDER BY c.club_name;
+SELECT gs.emp_id,
+       gs.emp_f_nm,
+       gs.emp_l_nm,
+       COUNT(DISTINCT es.event_id) AS total_events
+FROM guest_speaker gs
+JOIN event_speaker es
+  ON gs.emp_id = es.speaker_id
+JOIN events e
+  ON es.event_id = e.event_id
+GROUP BY gs.emp_id, gs.emp_f_nm, gs.emp_l_nm
+HAVING COUNT(DISTINCT es.event_id) > 1
+ORDER BY total_events DESC, gs.emp_l_nm, gs.emp_f_nm;
 ```
 Query Results:
 
-<img width="271" height="102" alt="Screenshot 2026-04-08 at 5 23 47 PM" src="https://github.com/user-attachments/assets/33eb2bcf-5fec-4f68-a6c2-b55d2386f69a" />
 
 ### Complex Query #10: Which students are active members in more than one club?
 
