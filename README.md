@@ -158,6 +158,7 @@ GROUP BY c.club_id, c.club_name
 ORDER BY active_member_count DESC, c.club_name;
 ```
 Query Results:
+AWKWARD RESULTS? NEED MORE DATA?
 
 <img width="350" height="121" alt="Screenshot 2026-04-08 at 4 49 12 PM" src="https://github.com/user-attachments/assets/07714f88-8709-47dd-a31a-61a15f9f6899" />
 
@@ -177,7 +178,7 @@ WHERE LOWER(ar.attendance_checked) = 'yes'
 GROUP BY e.event_id, e.event_title, e.event_date
 ORDER BY attendees_count DESC, e.event_date;
 ```
-Query Results:
+Query Results:AKWARD RESULTS? NEED MORE DATA? 
 
 <img width="310" height="131" alt="Screenshot 2026-04-08 at 5 25 12 PM" src="https://github.com/user-attachments/assets/b1e1b312-5560-4b09-8611-63704d6e498b" />
 
@@ -223,6 +224,7 @@ HAVING COUNT(DISTINCT es.event_id) > 1
 ORDER BY total_events DESC, gs.emp_l_nm, gs.emp_f_nm;
 ```
 Query Results:
+NEED TO ADD!! NOT ENOUGH DATA!
 
 ### Complex Query #10: Which students are active members in more than one club?
 
@@ -245,9 +247,11 @@ HAVING COUNT(DISTINCT c.club_id) > 1
 ORDER BY active_clubs DESC, s.student_l_nm;
 ```
 Query Results:
+NEED TO ADD!! NOT ENOUGH DATA!
 
 ### Feature Matrix
 <img width="783" height="336" alt="Screenshot 2026-04-08 at 6 22 27 PM" src="https://github.com/user-attachments/assets/74fd99fe-9a16-4240-8cb3-712b5a02d770" />
 
 
 ## Database Information
+NEED TO ADD!!
