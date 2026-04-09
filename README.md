@@ -37,6 +37,7 @@ Explanation: The data model is built around several entities that manage student
 
 Key Entity Relationships (Summary): 
 - Membership- We use this to store "Join Date" and "Status," which are attributes of the relationship rather than the student or club alone. A student can enroll in many clubs and each club has many students.
+- Role- This represents a many-to-many relationship between student and club. Similar to membership, A student can hold a role in several clubs and every club has many roles.
 - Event_Host- This is a critical many-to-many relationship between Club and Event. It includes an attribute for "Primary Host" vs. "Partner Host". A club can host many events and an event can be co-hosted by multiple clubs.
 - Attendance- This captures transaction-specific data: whether the student was checked in and the specific service hours earned for that specific event. A student attends many events and each event has many student attendees.
 - Reservation- This is a many-to-many relationship between club and fair. This shows that a club can attend many different fairs and a fair hosts many different clubs. In other words, it shows that a club can only request one reservation per fair, with a club hosting many reservations.
