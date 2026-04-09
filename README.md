@@ -161,9 +161,9 @@ GROUP BY c.club_id, c.club_name
 ORDER BY active_member_count DESC, c.club_name;
 ```
 Query Results:
-AWKWARD RESULTS? NEED MORE DATA?
 
-<img width="350" height="121" alt="Screenshot 2026-04-08 at 4 49 12 PM" src="https://github.com/user-attachments/assets/07714f88-8709-47dd-a31a-61a15f9f6899" />
+<img width="351" height="121" alt="Screenshot 2026-04-09 at 3 52 41 PM" src="https://github.com/user-attachments/assets/50f40b36-3d68-45c1-aaa4-5b0274f8e464" />
+
 
 ### Complex Query #7: Which events had the highest student attendance?
 
