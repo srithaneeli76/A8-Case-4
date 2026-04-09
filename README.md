@@ -13,7 +13,7 @@ Member Names:
 
 ## Case Description:
 
-The objective of this case is to develop a relational database for the Campus Club Pair ( CCCP) at Peachtree State University (Georgia) to manage student organizations and campus engagements. The data model includes memberships, events, attendance, and club funding. The sole purpose of the database is to manage the student organizations in a centralized way, and the goal is to model the complex relationships accurately to help the Student Life Director understand campus engagement and its finances.
+The objective of this case is to develop a relational database for the Campus Club Fair (CCCP) at Peachtree State University (Georgia) to manage student organizations and campus engagements. The data model includes memberships, events, attendance, and club funding. The sole purpose of the database is to manage the student organizations in a centralized way, and the goal is to model the complex relationships accurately to help the Student Life Director understand campus engagement and its finances.
 
 Core Entities:
 - Student- Stores student information such as ID, contact details, and graduation year, and connects to clubs through memberships, event attendance, and leadership roles.
