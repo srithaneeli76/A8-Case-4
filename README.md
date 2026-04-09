@@ -162,8 +162,7 @@ ORDER BY active_member_count DESC, c.club_name;
 ```
 Query Results:
 
-<img width="351" height="121" alt="Screenshot 2026-04-09 at 3 52 41 PM" src="https://github.com/user-attachments/assets/50f40b36-3d68-45c1-aaa4-5b0274f8e464" />
-
+<img width="352" height="125" alt="Screenshot 2026-04-09 at 5 11 10 PM" src="https://github.com/user-attachments/assets/9ee77794-8b9b-4a7c-b4d7-d0e7cedb2b32" />
 
 ### Complex Query #7: Which events had the highest student attendance?
 
