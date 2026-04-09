@@ -222,7 +222,7 @@ Query Results:
 
 <img width="254" height="45" alt="Screenshot 2026-04-08 at 5 24 25 PM" src="https://github.com/user-attachments/assets/405b4c55-d70a-4e0e-9109-67e48907940c" />
 
-### Complex Query #9: Which guest speakers have participated in more than one event?
+### Complex Query #9: Which clubs have hosted more than one event?
 
 Managerial Justification: This helps organizers identify the most active clubs in event programming and better understand which clubs are contributing the most to campus engagement.
 
