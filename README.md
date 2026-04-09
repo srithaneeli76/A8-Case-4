@@ -50,8 +50,8 @@ This helps club officers and event planners quickly identify currently active st
 
 Code:
 ```SQL
-SELECT s.student_f_nm,
-       s.student_l_nm
+SELECT DISTINCT s.student_f_nm,
+                s.student_l_nm
 FROM student s
 JOIN membership m
   ON s.student_id = m.student_id
@@ -60,7 +60,7 @@ ORDER BY s.student_l_nm, s.student_f_nm;
 ```
 Query Results:
 
-<img width="201" height="123" alt="Screenshot 2026-04-08 at 4 31 48 PM" src="https://github.com/user-attachments/assets/a2b189d1-bcf9-4923-aaca-1517f34e30ac" />
+<img width="165" height="169" alt="Screenshot 2026-04-09 at 5 45 54 PM" src="https://github.com/user-attachments/assets/79504e70-87e1-44f3-80b8-c43da810a06c" />
 
 ### Simple Query #2: What upcoming events are scheduled and in what order will they occur?
 
