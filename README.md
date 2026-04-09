@@ -16,13 +16,12 @@ Member Names:
 The objective of this case is to develop a relational database for the Campus Club Pair ( CCCP) at Peachtree State University (Georgia) to manage student organizations and campus engagements. The data model includes memberships, events, attendance, and club funding. The sole purpose of the database is to manage the student organizations in a centralized way, and the goal is to model the complex relationships accurately to help the Student Life Director understand campus engagement and its finances.
 
 Core Entities:
-Student- Stores student information such as ID, contact details, and graduation year, and connects to clubs through memberships, event attendance, and leadership roles.
-
-Event- Stores each club-hosted event, including its title, schedule, and location, and serves as a central entity for tracking attendance and participation.
-Officer roles-A second many-to-many relationship where a club has multiple leadership positions and a single student is permitted to hold these roles in more than one club.
-Funding requests- The Funding Request entity is central here, linking to Club (the requester), Staff (the reviewer and optional backup reviewer), and Purchase (the actual expenditure).
-Fair/Table setup- For every fair, a club must reserve at least one table. This is created by an identifying many-to-many relationship between club and fair to create a new table titled reservation. A fair can host many clubs and a club can attend many fairs.
-Club- Stores information about each student organization, including its category, contact details, and formation date, and serves as the central entity for memberships, events, and funding activities.
+ Student- Stores student information such as ID, contact details, and graduation year, and connects to clubs through memberships, event attendance, and leadership roles.
+ Event- Stores each club-hosted event, including its title, schedule, and location, and serves as a central entity for tracking attendance and participation.
+ Officer roles-A second many-to-many relationship where a club has multiple leadership positions and a single student is permitted to hold these roles in more than one club.
+ Funding requests- The Funding Request entity is central here, linking to Club (the requester), Staff (the reviewer and optional backup reviewer), and Purchase (the actual expenditure).
+ Fair/Table setup- For every fair, a club must reserve at least one table. This is created by an identifying many-to-many relationship between club and fair to create a new table titled reservation. A fair can host many clubs and a club can attend many fairs.
+ Club- Stores information about each student organization, including its category, contact details, and formation date, and serves as the central entity for memberships, events, and funding activities.
 
 Extension: At club events, certain clubs are able to bring guest speakers to come in and speak to their members. These guest speakers are employees of specific companies. For example, Google (the company) can have one of their Software Engineers (guest speakers) come in for a club event and talk about the company, their position, or whatever topic they choose to. The extension allows the model to track the speakers, the companies they represent, and the events they participate in.
 
