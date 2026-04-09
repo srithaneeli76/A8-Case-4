@@ -116,6 +116,7 @@ ORDER BY m.join_date DESC;
 Query Results:
 
 <img width="338" height="284" alt="Screenshot 2026-04-09 at 5 54 15 PM" src="https://github.com/user-attachments/assets/e6d8670a-2cc6-4508-956e-b5f247976853" />
+
 ### Simple Query #4: Which fair reservations require power access and for which fair were they made?
 
 Managerial Justification: This helps event organizers prepare table layouts and electrical setup ahead of time for each club fair.
