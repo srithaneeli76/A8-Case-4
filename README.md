@@ -23,7 +23,8 @@ Extension: At club events, certain clubs are able to bring guest speakers to com
 
 
 
-Explanation: (NEED TO ADD)
+Explanation: The data model is built around several entities that manage student organizations and their activities/roles. The student entity stores student information such as ID, contact details, and graduation year, and connects to clubs through memberships, event attendance, and leadership roles. The event entity stores each club-hosted event, including its title, schedule, and location, and serves as a central entity for tracking attendance and participation. The Funding Request entity is central here, linking to Club (the requester), Staff (the reviewer and optional backup reviewer), and Purchase (the actual expenditure). The club entity stores information about each student organization, including its category, contact details, and formation date, and serves as the central entity for memberships, events, and funding activities. The Officer role is a second many-to-many relationship in which a club has multiple leadership positions, and a single student may hold these roles in more than one club. Lastly, for every fair, a club must reserve at least one table. This is created by identifying a many-to-many relationship between club and fair to create a new table titled reservation. A fair can host many clubs, and a club can attend many fairs. The Membership entity is used to store "Join Date" and "Status," which are attributes of the relationship rather than the student or club alone. The event host entity is a critical associative entity between the Club and Event. It resolves the M: M relationship and includes a boolean or attribute for "Primary Host" vs. "Partner Host." Lastly, the attendance entity captures transaction-specific data: whether the student was checked in and the specific service hours earned for that specific event.
+ 
 
 ## Data Dictionary:
 
