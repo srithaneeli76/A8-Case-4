@@ -269,10 +269,9 @@ Query Results:
 
 <img width="314" height="125" alt="Screenshot 2026-04-09 at 5 37 40 PM" src="https://github.com/user-attachments/assets/c3cf9c03-546e-46f2-9cb7-88c094866afd" />
 
-
 ### Feature Matrix
-<img width="783" height="336" alt="Screenshot 2026-04-08 at 6 22 27 PM" src="https://github.com/user-attachments/assets/74fd99fe-9a16-4240-8cb3-712b5a02d770" />
 
+<img width="621" height="207" alt="Screenshot 2026-04-09 at 6 41 04 PM" src="https://github.com/user-attachments/assets/3cbc36e5-f1fe-40de-b0f0-e532c59708dc" />
 
 ## Database Information
 Database Name: mb_A8
