@@ -208,25 +208,25 @@ Query Results:
 
 ### Complex Query #9: Which guest speakers have participated in more than one event?
 
-Managerial Justification: This helps organizers identify frequently used speakers, strengthen relationships with reliable guests, and plan future speaker-based events more effectively.
+Managerial Justification: This helps organizers identify the most active clubs in event programming and better understand which clubs are contributing the most to campus engagement.
 
 Code:
 ```SQL
-SELECT gs.emp_id,
-       gs.emp_f_nm,
-       gs.emp_l_nm,
-       COUNT(DISTINCT es.event_id) AS total_events
-FROM guest_speaker gs
-JOIN event_speaker es
-  ON gs.emp_id = es.speaker_id
+SELECT c.club_id,
+       c.club_name,
+       COUNT(e.event_id) AS total_events
+FROM club c
 JOIN events e
-  ON es.event_id = e.event_id
-GROUP BY gs.emp_id, gs.emp_f_nm, gs.emp_l_nm
-HAVING COUNT(DISTINCT es.event_id) > 1
-ORDER BY total_events DESC, gs.emp_l_nm, gs.emp_f_nm;
+  ON c.club_id = e.club_id
+JOIN staff s
+  ON e.staff_id = s.staff_id
+GROUP BY c.club_id, c.club_name
+HAVING COUNT(e.event_id) > 1
+ORDER BY total_events DESC, c.club_name;
 ```
 Query Results:
-NEED TO ADD!! NOT ENOUGH DATA!
+
+<img width="227" height="60" alt="Screenshot 2026-04-09 at 5 31 53 PM" src="https://github.com/user-attachments/assets/0d1cdebd-2898-421a-9012-e43e4c069314" />
 
 ### Complex Query #10: Which students are active members in more than one club?
 
