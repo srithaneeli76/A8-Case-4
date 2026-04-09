@@ -17,6 +17,7 @@ The objective of this case is to develop a relational database for the Campus Cl
 
 Core Entities:
 Student- Stores student information such as ID, contact details, and graduation year, and connects to clubs through memberships, event attendance, and leadership roles.
+
 Event- Stores each club-hosted event, including its title, schedule, and location, and serves as a central entity for tracking attendance and participation.
 Officer roles-A second many-to-many relationship where a club has multiple leadership positions and a single student is permitted to hold these roles in more than one club.
 Funding requests- The Funding Request entity is central here, linking to Club (the requester), Staff (the reviewer and optional backup reviewer), and Purchase (the actual expenditure).
