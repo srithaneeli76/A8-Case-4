@@ -249,7 +249,9 @@ HAVING COUNT(DISTINCT c.club_id) > 1
 ORDER BY active_clubs DESC, s.student_l_nm;
 ```
 Query Results:
-NEED TO ADD!! NOT ENOUGH DATA!
+
+<img width="314" height="125" alt="Screenshot 2026-04-09 at 5 37 40 PM" src="https://github.com/user-attachments/assets/c3cf9c03-546e-46f2-9cb7-88c094866afd" />
+
 
 ### Feature Matrix
 <img width="783" height="336" alt="Screenshot 2026-04-08 at 6 22 27 PM" src="https://github.com/user-attachments/assets/74fd99fe-9a16-4240-8cb3-712b5a02d770" />
