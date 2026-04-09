@@ -180,9 +180,9 @@ WHERE LOWER(ar.attendance_checked) = 'yes'
 GROUP BY e.event_id, e.event_title, e.event_date
 ORDER BY attendees_count DESC, e.event_date;
 ```
-Query Results:AKWARD RESULTS? NEED MORE DATA? 
+Query Results:
 
-<img width="310" height="131" alt="Screenshot 2026-04-08 at 5 25 12 PM" src="https://github.com/user-attachments/assets/b1e1b312-5560-4b09-8611-63704d6e498b" />
+<img width="321" height="138" alt="Screenshot 2026-04-09 at 5 14 28 PM" src="https://github.com/user-attachments/assets/6b229c4c-0b51-4708-9d9c-0e4bce5eadb2" />
 
 ### Complex Query #8: Which club fairs had the highest number of club reservations?
 
