@@ -40,7 +40,7 @@ Key Entity Relationships (Summary):
 - Role- This represents a many-to-many relationship between student and club. Similar to membership, A student can hold a role in several clubs and every club has many roles.
 - Event_Host- This is a critical many-to-many relationship between Club and Event. It includes an attribute for "Primary Host" vs. "Partner Host". A club can host many events and an event can be co-hosted by multiple clubs.
 - Attendance- This captures transaction-specific data: whether the student was checked in and the specific service hours earned for that specific event. A student attends many events and each event has many student attendees.
-- Reservation- This is a many-to-many relationship between club and fair. This shows that a club can attend many different fairs and a fair hosts many different clubs. In other words, it shows that a club can only request one reservation per fair, with a club hosting many reservations.
+- Reservation- This is a many-to-many relationship between club and fair. This shows that a club can attend many different fairs and a fair hosts many different clubs. In other words, it shows that a club can only request one reservation per fair, with a fair hosting many reservations.
 - Staff- Between the staff to funding request entities, we have two one to many relationships representing the primary staff and secondary staff. Both are nonidentifying, but the secondary reviewer has an optional modality as it can be null.
 - Sister Clubs- This is handled via a Recursive (Self-Referencing) Relationship on the Club table, where a SisterClubID foreign key points back to another ClubID, restricted to a 1:1 mapping
  
