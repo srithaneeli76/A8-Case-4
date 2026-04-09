@@ -98,9 +98,9 @@ Query Results:
 
 <img width="563" height="258" alt="Screenshot 2026-04-08 at 4 41 02 PM" src="https://github.com/user-attachments/assets/c8fa9046-5d05-4975-a972-2e17d4cc8341" />
 
-### Simple Query #3: Which students have joined a club and when did they join?
+### Simple Query #3: Which student memberships were added most recently?
 
-Managerial Justification: This helps managers and club leaders track membership growth over time and identify recently joined students for onboarding or outreach.
+Managerial Justification: This helps managers track recent membership activity and identify newly joined students for outreach and onboarding.
 
 Code:
 ```SQL
@@ -115,8 +115,7 @@ ORDER BY m.join_date DESC;
 ```
 Query Results:
 
-<img width="337" height="151" alt="Screenshot 2026-04-08 at 4 42 36 PM" src="https://github.com/user-attachments/assets/440730de-667e-4699-87a9-63b656a4f5d9" />
-
+<img width="338" height="284" alt="Screenshot 2026-04-09 at 5 54 15 PM" src="https://github.com/user-attachments/assets/e6d8670a-2cc6-4508-956e-b5f247976853" />
 ### Simple Query #4: Which fair reservations require power access and for which fair were they made?
 
 Managerial Justification: This helps event organizers prepare table layouts and electrical setup ahead of time for each club fair.
