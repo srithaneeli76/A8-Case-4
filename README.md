@@ -71,7 +71,7 @@ SELECT DISTINCT s.student_f_nm,
 FROM student s
 JOIN membership m
   ON s.student_id = m.student_id
-WHERE LOWER(m.member_status) = 'active'
+WHERE m.member_status = 'ACTIVE'
 ORDER BY s.student_l_nm, s.student_f_nm;
 ```
 Query Results:
