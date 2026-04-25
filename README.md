@@ -28,7 +28,7 @@ Extension: At club events, certain clubs are able to bring guest speakers to com
 ## Data Model: 
 
 
-![ERD Diagram]https://github.com/srithaneeli76/A8-Case-4/blob/main/mb_A8%20Project%201%20DM%20Final.png
+![ERD Diagram](https://github.com/srithaneeli76/A8-Case-4/blob/main/mb_A8%20Project%201%20DM%20Final.png)
 
 
 
