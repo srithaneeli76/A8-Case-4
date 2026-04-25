@@ -29,7 +29,7 @@ Extension: At club events, certain clubs are able to bring guest speakers to com
 
 
 <img width="974" height="705" alt="image" src="https://github.com/user-attachments/assets/879d054e-a8f2-4941-a7d3-bf72cd9ec584" />
-
+![Database ERD](./docs/Image 4-25-26 at 12.08 PM (1).png) 
 
 
 
