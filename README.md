@@ -157,7 +157,7 @@ ORDER BY s.student_l_nm, s.student_f_nm;
 ```
 Query Results:
 
-<img width="339" height="44" alt="Screenshot 2026-04-08 at 4 47 25 PM" src="https://github.com/user-attachments/assets/299b9283-f8dd-4495-af42-ccffbe396543" />
+![Query 5 Result](https://github.com/srithaneeli76/A8-Case-4/blob/main/imagenum5.png)
 
 ### Complex Query #6: Which clubs currently have the highest number of active members?
 
@@ -178,7 +178,7 @@ ORDER BY active_member_count DESC, c.club_name;
 ```
 Query Results:
 
-<img width="352" height="125" alt="Screenshot 2026-04-09 at 5 11 10 PM" src="https://github.com/user-attachments/assets/9ee77794-8b9b-4a7c-b4d7-d0e7cedb2b32" />
+![Query 6 Result](https://github.com/srithaneeli76/A8-Case-4/blob/main/imagenum6.png)
 
 ### Complex Query #7: Which events had the highest student attendance?
 
@@ -198,7 +198,7 @@ ORDER BY attendees_count DESC, e.event_date;
 ```
 Query Results:
 
-<img width="321" height="138" alt="Screenshot 2026-04-09 at 5 14 28 PM" src="https://github.com/user-attachments/assets/6b229c4c-0b51-4708-9d9c-0e4bce5eadb2" />
+![Query 7 Result](https://github.com/srithaneeli76/A8-Case-4/blob/main/imagenum6.png)
 
 ### Complex Query #8: Which club fairs had the highest number of club reservations?
 
@@ -242,7 +242,7 @@ ORDER BY total_events DESC, c.club_name;
 ```
 Query Results:
 
-<img width="227" height="60" alt="Screenshot 2026-04-09 at 5 31 53 PM" src="https://github.com/user-attachments/assets/0d1cdebd-2898-421a-9012-e43e4c069314" />
+![Query 9 Result](https://github.com/srithaneeli76/A8-Case-4/blob/main/imagenum9.png)
 
 ### Complex Query #10: Which students are active members in more than one club?
 
